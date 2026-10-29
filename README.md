@@ -3,12 +3,15 @@
 A Mac app from Great Question that surfaces research-worthy questions from your team's Slack, Linear and
 GitHub, and helps you start the right research. It's an internal preview.
 
+**More about it:** https://greatquestion.github.io/great-questions-landing-page/
+
 This repo only holds the built app and its update file. The app checks here for new versions and updates
-itself, so you only install once.
+itself, so you only install once. It runs on Apple silicon and Intel Macs.
 
 ## Install
 
-1. Download the latest `.dmg` from [Releases](https://github.com/GreatQuestion/great-questions-releases/releases/latest).
+1. Download [Great-Questions.dmg](https://github.com/GreatQuestion/great-questions-releases/releases/latest/download/Great-Questions.dmg)
+   (always the newest version).
 2. Open it and drag **Great Questions** into **Applications**.
 3. Open Great Questions. The first time, macOS says it can't check the app for malicious software (it isn't
    signed by Apple yet). Click **Done**, then go to **System Settings → Privacy & Security**, scroll down to
@@ -30,6 +33,16 @@ weekday scan in Claude. Your first questions show up a few minutes later. Want a
 
 Great Questions checks for updates when it opens and every few hours. When one's ready you'll see
 **Restart to update**.
+
+## What each release contains
+
+| File | What it's for |
+| --- | --- |
+| `Great-Questions.dmg` | The installer. |
+| `Great-Questions.app.tar.gz` and `.sig` | The update package the app downloads, and its signature. The app only installs updates signed with Great Question's key. |
+| `latest.json` | The file the app checks to see whether there's a newer version. |
+
+The source code lives in a private Great Question repo.
 
 ## Feedback
 
